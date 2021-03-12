@@ -7,4 +7,4 @@
 
 
 # Séminaire de méthodes quantitives
-* 
+* Vous trouverez sur cette page toutes les informations nécessaires concernant le séminaire.

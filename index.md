@@ -8,3 +8,4 @@
 
 # Séminaire de méthodes quantitives
 * Vous trouverez sur cette page toutes les informations nécessaires concernant le séminaire.
+* Vous y trouvez les codes source des programmes, les données, etc.

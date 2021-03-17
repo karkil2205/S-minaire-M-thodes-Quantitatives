@@ -40,8 +40,10 @@
 
 # Manuel de référence
 * Pour cette année 2021, nous utiliserons ce manuel : [UGARTE, Maria Dolores, MILITINO, Ana F., et ARNHOLT, Alan T. Probability and Statistics with R. CRC press, 2008](https://book4you.org/book/4977748/e23d9a).
-
-"This book covers a wide range of topics in both theoretical and applied statistics … Detailed executable codes and codes to generate the figures in each chapter are available online … nicely blend[s] mathematical statistics, statistical inference, statistical methods, and computational statistics using S language ... . Students or self-learners can learn some basic techniques for using R in statistical analysis on their way to learning about various topics in probability and statistics. This book also could serve as a wonderful stand-alone textbook in probability and statistics if the computational statistics portions are skipped." ―Technometrics, May 2009.
+* Voici quelques avis d'experts sur ce manuel :
+1. "This book covers a wide range of topics in both theoretical and applied statistics … Detailed executable codes and codes to generate the figures in each chapter are available online … nicely blend[s] mathematical statistics, statistical inference, statistical methods, and computational statistics using S language ... . Students or self-learners can learn some basic techniques for using R in statistical analysis on their way to learning about various topics in probability and statistics. This book also could serve as a wonderful stand-alone textbook in probability and statistics if the computational statistics portions are skipped." ―Technometrics, May 2009.
+2. "The book is comprehensive and well written. The notation is clear and the mathematical derivations behind nontrivial equations and computational implementations are carefully explained. Rather than presenting a collection of R scripts together with a summary of relevant theoretical results, this book offers a well-balanced mix of theory, examples and R code." ―The American Statistician, February 2009.
+3. "… an impressive book … this is a good reference book with comprehensive coverage of the details of statistical analysis and application that the social researcher may need in their work. I would recommend it as a useful addition to the bookshelf." ―Significance, December 2008
 
 
 

@@ -5,6 +5,10 @@
 
 <img src="https://rstudio.com/wp-content/uploads/2014/07/RStudio-Logo-Blue-Gray.png" width="50">
 
+# Chaine youtube du séminaire
+[Chaine youtube du séminaire](https://youtube.com/playlist?list=PLWfwRl41e-v1_9I-SiUlvGoG6WnZzqJw7)
+
+
 
 # Séminaire de méthodes quantitives
 * Vous trouverez sur cette page toutes les informations nécessaires concernant le séminaire.

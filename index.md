@@ -17,8 +17,8 @@
 ### Guide pour installer RStudio
 
 * Il faut d'abord installer **R**.
-* Sous **Windows** http://cran.r-project.org/bin/windows/base/.
-* Pour **Mac OS X** http://cran.r-project.org/bin/macosx/.
+* Sous **Windows** [](http://cran.r-project.org/bin/windows/base/).
+* Pour **Mac OS X** [](http://cran.r-project.org/bin/macosx/).
 * Installation de RStudio.
 * **RStudio** est une version plus conviviale et élaborée de  **R**.
 * **R** doit être installé.

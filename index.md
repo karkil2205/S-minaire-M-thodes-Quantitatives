@@ -27,7 +27,6 @@
 * Cliquez sur ce lien https://rstudio.cloud/projects .
 
 ## Vos premiers pas avec un Notebook 
-* Ce premier chapitre contient une introduction à la programmation avec **R**.
 
 <a href="https://drive.google.com/file/d/1kK80DAfuZO2fjqAZmxUmgMszOarjsD_1/view?usp=drivesdk">Example file</a>
 

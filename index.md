@@ -41,11 +41,14 @@
 * Vous trouverez dans ce manuel tous les outils pour réaliser des graphiques de très haute facture : [WICKHAM, H. ggplot2: Elegant Graphics for Data Analysis. Springer, New York, 2009](ggplot2.pdf).
 * Pour en savoir plus sur l'histoire de [ggplot2](https://en.m.wikipedia.org/wiki/Ggplot2).
 
-# Manuel du cours
-* Pour cette année 2021
+# Manuel de référence
+* Pour cette année 2021, nous utiliserons ce manuel : [UGARTE, Maria Dolores, MILITINO, Ana F., et ARNHOLT, Alan T. Probability and Statistics with R. CRC press, 2008](https://book4you.org/book/4977748/e23d9a).
 
-"This book covers a wide range of topics in both theoretical and applied statistics … Detailed executable codes and codes to generate the figures in each chapter are available online … nicely blend[s] mathematical statistics, statistical inference, statistical methods, and computational statistics using S language ... . Students or self-learners can learn some basic techniques for using R in statistical analysis on their way to learning about various topics in probability and statistics. This book also could serve as a wonderful stand-alone textbook in probability and statistics if the computational statistics portions are skipped."
-―Technometrics, May 2009
+"This book covers a wide range of topics in both theoretical and applied statistics … Detailed executable codes and codes to generate the figures in each chapter are available online … nicely blend[s] mathematical statistics, statistical inference, statistical methods, and computational statistics using S language ... . Students or self-learners can learn some basic techniques for using R in statistical analysis on their way to learning about various topics in probability and statistics. This book also could serve as a wonderful stand-alone textbook in probability and statistics if the computational statistics portions are skipped." ―Technometrics, May 2009.
+
+
+
+
 
 
 

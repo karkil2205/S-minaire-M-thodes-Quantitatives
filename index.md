@@ -5,14 +5,18 @@
 
 <img src="https://rstudio.com/wp-content/uploads/2014/07/RStudio-Logo-Blue-Gray.png" width="50">
 
-# Chaine youtube du séminaire
-[Chaine youtube du séminaire](https://youtube.com/playlist?list=PLWfwRl41e-v1_9I-SiUlvGoG6WnZzqJw7)
 
 
-
-# Séminaire de méthodes quantitives
+# Séminaire de méthodess quantitives
 * Vous trouverez sur cette page toutes les informations nécessaires concernant le séminaire.
 * Vous y trouvez les codes source des programmes, les données, etc.
+
+### Chaine youtube du séminaire
+[Chaine youtube du séminaire](https://youtube.com/playlist?list=PLWfwRl41e-v1_9I-SiUlvGoG6WnZzqJw7)
+
+### RPub 
+
+* Vous trouverez sur ce lien la dernière version du programme écrit en cours [Lien RPub](https://rpubs.com/karkil2205/740797).  
 
 ### Guide pour installer RStudio
 

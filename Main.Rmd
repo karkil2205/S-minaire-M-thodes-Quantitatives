@@ -1,0 +1,40 @@
+---
+title: "Intitation à RStudio"
+output:
+  html_notebook: default
+  word_document: default
+---
+
+# Introduction
+
+* Nous allons étudier la programmation avec **R**. 
+* Nous sommes dans un *Notebook*.
+* Nous pouvons écrire des fomules de mathématiques en *LATEX*.
+* Par exemple, je peux écrire une équation comme :
+
+$$
+x^2-12x+14=0.
+$$
+
+* Des formules un peu plus sophistiquées
+
+$$
+\int_{-\infty }^{+\infty }e^{-x^2}dx=\sqrt\pi.
+$$
+
+Mettre un lien hypertexte [Le wikipedia du Cnam](https://fr.m.wikipedia.org/wiki/Conservatoire_national_des_arts_et_m%C3%A9tiers).
+
+## Les Chunks
+
+* Pour exécuter des lignes de code en **R**, vous pouvez insérer ces lignes à partir du menu.
+
+
+```{r}
+1+1
+```
+
+
+
+
+
+

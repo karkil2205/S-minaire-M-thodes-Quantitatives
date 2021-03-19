@@ -7,9 +7,10 @@
 
 
 
-# Séminaire de méthodess quantitives
+# Séminaire de méthodes quantitives
 * Vous trouverez sur cette page toutes les informations nécessaires concernant le séminaire.
 * Vous y trouvez les codes source des programmes, les données, etc.
+* La dernière version compulée des programmes écrits en cours sont sur ce [lien RPub](https://rpubs.com/karkil2205/740797). 
 
 ### Chaine youtube du séminaire
 [Chaine youtube du séminaire](https://youtube.com/playlist?list=PLWfwRl41e-v1_9I-SiUlvGoG6WnZzqJw7)

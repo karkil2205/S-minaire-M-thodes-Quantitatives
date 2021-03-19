@@ -17,7 +17,7 @@
 
 ### RPub 
 
-* Vous trouverez sur ce lien la dernière version du programme écrit en cours [Lien RPub](https://rpubs.com/karkil2205/740797).  
+* Vous trouverez sur ce lien la dernière version du programme écrit en cours [lien RPub](https://rpubs.com/karkil2205/740797).  
 
 ### Guide pour installer RStudio
 

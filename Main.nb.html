@@ -248,11 +248,85 @@ x^2-12x+14=0.
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+</div>
+<div id="probability-and-statistics-with-r" class="section level1">
+<h1>Probability and statistics with R</h1>
+<div id="vectors" class="section level2">
+<h2>Vectors</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBTdXBwb3NvbnMgcXVlIHogc29pZW50IGRlcyBwcml4IGVuIGV1cm9zLiBQb3VyIGxlcyBjb252ZXJ0aXIgZW4gZG9sbGFycywgaWwgc3VmZml0IGRlIGZhaXJlXG4wLjg3KnpcblxuYGBgIn0= -->
+<pre class="r"><code># Supposons que z soient des prix en euros. Pour les convertir en dollars, il suffit de faire
+0.87*z
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEuNzQgMy40OCA1LjIyIDYuOTZcbiJ9 -->
+<pre><code>[1] 1.74 3.48 5.22 6.96</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<blockquote>
+<p>LogVec &lt;- (x &lt; z) # logical vector LogVec # 5 &lt; 2, 5 &lt; 4, 5 &lt; 6, 5 &lt; 8 [1] FALSE FALSE TRUE TRUE typeof(LogVec)</p>
+</blockquote>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHlwZW9mKHgpXG5cbmBgYCJ9 -->
+<pre class="r"><code>typeof(x)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiZG91YmxlXCJcbiJ9 -->
+<pre><code>[1] &quot;double&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuelxuYGBgIn0= -->
+<pre class="r"><code>z</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIgNCA2IDhcbiJ9 -->
+<pre><code>[1] 2 4 6 8</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuelsyXVxuYGBgIn0= -->
+<pre class="r"><code>z[2]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDRcbiJ9 -->
+<pre><code>[1] 4</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHlwZW9mKHopXG5gYGAifQ== -->
+<pre class="r"><code>typeof(z)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiZG91YmxlXCJcbiJ9 -->
+<pre><code>[1] &quot;double&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuejwtYXMuaW50ZWdlcih6KVxudHlwZW9mKHopXG5gYGAifQ== -->
+<pre class="r"><code>z&lt;-as.integer(z)
+typeof(z)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiaW50ZWdlclwiXG4ifQ== -->
+<pre><code>[1] &quot;integer&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2VxKDEsMTAwLDMpXG5cbmBgYCJ9 -->
+<pre class="r"><code>seq(1,100,3)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSAgIDEgICA0ICAgNyAgMTAgIDEzICAxNiAgMTkgIDIyICAyNSAgMjggIDMxICAzNCAgMzcgIDQwXG5bMTVdICA0MyAgNDYgIDQ5ICA1MiAgNTUgIDU4ICA2MSAgNjQgIDY3ICA3MCAgNzMgIDc2ICA3OSAgODJcblsyOV0gIDg1ICA4OCAgOTEgIDk0ICA5NyAxMDBcbiJ9 -->
+<pre><code> [1]   1   4   7  10  13  16  19  22  25  28  31  34  37  40
+[15]  43  46  49  52  55  58  61  64  67  70  73  76  79  82
+[29]  85  88  91  94  97 100</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiSW50aXRhdGlvbiDDoCBSU3R1ZGlvIgpvdXRwdXQ6CiAgaHRtbF9ub3RlYm9vazogZGVmYXVsdAogIHdvcmRfZG9jdW1lbnQ6IGRlZmF1bHQKLS0tCgojIEludHJvZHVjdGlvbgoKKiBOb3VzIGFsbG9ucyDDqXR1ZGllciBsYSBwcm9ncmFtbWF0aW9uIGF2ZWMgKipSKiouIAoqIE5vdXMgc29tbWVzIGRhbnMgdW4gKk5vdGVib29rKi4KKiBOb3VzIHBvdXZvbnMgw6ljcmlyZSBkZXMgZm9tdWxlcyBkZSBtYXRow6ltYXRpcXVlcyBlbiAqTEFURVgqLgoqIFBhciBleGVtcGxlLCBqZSBwZXV4IMOpY3JpcmUgdW5lIMOpcXVhdGlvbiBjb21tZSA6CgokJAp4XjItMTJ4KzE0PTAuCiQkCgoqIERlcyBmb3JtdWxlcyB1biBwZXUgcGx1cyBzb3BoaXN0aXF1w6llcwoKJCQKXGludF97LVxpbmZ0eSB9XnsrXGluZnR5IH1lXnsteF4yfWR4PVxzcXJ0XHBpLgokJAoKTWV0dHJlIHVuIGxpZW4gaHlwZXJ0ZXh0ZSBbTGUgd2lraXBlZGlhIGR1IENuYW1dKGh0dHBzOi8vZnIubS53aWtpcGVkaWEub3JnL3dpa2kvQ29uc2VydmF0b2lyZV9uYXRpb25hbF9kZXNfYXJ0c19ldF9tJUMzJUE5dGllcnMpLgoKIyMgTGVzIENodW5rcwoKKiBQb3VyIGV4w6ljdXRlciBkZXMgbGlnbmVzIGRlIGNvZGUgZW4gKipSKiosIHZvdXMgcG91dmV6IGluc8OpcmVyIGNlcyBsaWduZXMgw6AgcGFydGlyIGR1IG1lbnUuCgoKYGBge3J9CjErMQpgYGAKCgoKCgoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiSW50aXRhdGlvbiDDoCBSU3R1ZGlvIgpvdXRwdXQ6CiAgaHRtbF9ub3RlYm9vazogZGVmYXVsdAogIHdvcmRfZG9jdW1lbnQ6IGRlZmF1bHQKLS0tCgojIEludHJvZHVjdGlvbgoKKiBOb3VzIGFsbG9ucyDDqXR1ZGllciBsYSBwcm9ncmFtbWF0aW9uIGF2ZWMgKipSKiouIAoqIE5vdXMgc29tbWVzIGRhbnMgdW4gKk5vdGVib29rKi4KKiBOb3VzIHBvdXZvbnMgw6ljcmlyZSBkZXMgZm9tdWxlcyBkZSBtYXRow6ltYXRpcXVlcyBlbiAqTEFURVgqLgoqIFBhciBleGVtcGxlLCBqZSBwZXV4IMOpY3JpcmUgdW5lIMOpcXVhdGlvbiBjb21tZSA6CgokJAp4XjItMTJ4KzE0PTAuCiQkCgoqIERlcyBmb3JtdWxlcyB1biBwZXUgcGx1cyBzb3BoaXN0aXF1w6llcwoKJCQKXGludF97LVxpbmZ0eSB9XnsrXGluZnR5IH1lXnsteF4yfWR4PVxzcXJ0XHBpLgokJAoKTWV0dHJlIHVuIGxpZW4gaHlwZXJ0ZXh0ZSBbTGUgd2lraXBlZGlhIGR1IENuYW1dKGh0dHBzOi8vZnIubS53aWtpcGVkaWEub3JnL3dpa2kvQ29uc2VydmF0b2lyZV9uYXRpb25hbF9kZXNfYXJ0c19ldF9tJUMzJUE5dGllcnMpLgoKIyMgTGVzIENodW5rcwoKKiBQb3VyIGV4w6ljdXRlciBkZXMgbGlnbmVzIGRlIGNvZGUgZW4gKipSKiosIHZvdXMgcG91dmV6IGluc8OpcmVyIGNlcyBsaWduZXMgw6AgcGFydGlyIGR1IG1lbnUuCgoKYGBge3J9CjErMQpgYGAKCgoKIyBQcm9iYWJpbGl0eSBhbmQgc3RhdGlzdGljcyB3aXRoIFIKCgojIyBWZWN0b3JzCgoKYGBge3J9CnggPC0gNSAKeAp5IDwtIGMoNywgMywgNSkKeQp6IDwtIGMoMiwgNCwgNiwgOCkKbGVuZ3RoKHopCmxlbmd0aCh4KQpsZW5ndGgoeSkKeCArIHkKeSArIHogIyBPcMOpcmF0aW9uIG5vbiBzb3VoYWl0w6llIGNhciBwYXMgZGUgbcOqbWUgbG9uZ3VldXIKIyBTdXBwb3NvbnMgcXVlIHogc29pZW50IGRlcyBwcml4IGVuIGV1cm9zLiBQb3VyIGxlcyBjb252ZXJ0aXIgZW4gZG9sbGFycywgaWwgc3VmZml0IGRlIGZhaXJlCjAuODcqegpgYGAKCj4gTG9nVmVjIDwtICh4IDwgeikgIyBsb2dpY2FsIHZlY3Rvcgo+IExvZ1ZlYyAjIDUgPCAyLCA1IDwgNCwgNSA8IDYsIDUgPCA4ClsxXSBGQUxTRSBGQUxTRSBUUlVFIFRSVUUKPiB0eXBlb2YoTG9nVmVjKQoKCmBgYHtyfQpMb2dWZWMgPC0gKHggPCB6KQpMb2dWZWMKdHlwZW9mKExvZ1ZlYykKdHlwZW9mKHgpCmBgYAoKCgpgYGB7cn0Kegp6WzJdCnR5cGVvZih6KQp6PC1hcy5pbnRlZ2VyKHopCnR5cGVvZih6KQoKYGBgCgoKYGBge3J9CkxFVFRFUlMgIyMgdmVjdGV1ciBjb250ZW5hbnQgbGVzIGxldHRyZXMgZGUgbCdhbHBoYWJldApMRVRURVJTWzEwXSAjIyAxMMOobWUgbGV0dHJlICAKTEVUVEVSU1tjKDEsIDIsIDMsIDQpXSAjIyBMZXMgcXVhdHJlIHByZW1pw6hyZXMgbGV0dHJlcwpMRVRURVJTWzE6MjBdICMjIExlcyB2aW5ndCBwcmVtacOocmVzIGxldHRyZXMKMToyMCAjIyBjcsOpZSB1bmUgbGlzdGUgKG91IHVuIHZlY3RldXIpIGRlcyBub21icmVzIGRlIDEgw6AgMjAKMTk4MDoyMDIxICAgICAjIyBDcsOpZXogdW4gdmVjdGV1ciBkJ2FubsOpZXMgZGUgMTk4MCDDoCAyMDIxCnNlcSgxOTgwLDIwMjEsNCkgICAgICAgICAgICAgICMjICBDcsOpZXogdW4gdmVjdGV1ciBkZXMgYW5uw6llcyBiaXNleHRpbGVzIGRlcHVpcyAgMTk4MAoKCmBgYAoKCgoKCgo=</div>
 
 
 

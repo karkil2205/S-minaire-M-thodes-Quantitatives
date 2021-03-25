@@ -35,6 +35,66 @@ Mettre un lien hypertexte [Le wikipedia du Cnam](https://fr.m.wikipedia.org/wiki
 
 
 
+# Probability and statistics with R
+
+
+## Vectors
+
+
+```{r}
+x <- 5 
+x
+y <- c(7, 3, 5)
+y
+z <- c(2, 4, 6, 8)
+length(z)
+length(x)
+length(y)
+x + y
+y + z # Opération non souhaitée car pas de même longueur
+# Supposons que z soient des prix en euros. Pour les convertir en dollars, il suffit de faire
+0.87*z
+```
+
+> LogVec <- (x < z) # logical vector
+> LogVec # 5 < 2, 5 < 4, 5 < 6, 5 < 8
+[1] FALSE FALSE TRUE TRUE
+> typeof(LogVec)
+
+
+```{r}
+LogVec <- (x < z)
+LogVec
+typeof(LogVec)
+typeof(x)
+```
+
+
+
+```{r}
+z
+z[2]
+typeof(z)
+z<-as.integer(z)
+typeof(z)
+
+```
+
+
+```{r}
+LETTERS ## vecteur contenant les lettres de l'alphabet
+LETTERS[10] ## 10ème lettre  
+LETTERS[c(1, 2, 3, 4)] ## Les quatre premières lettres
+LETTERS[1:20] ## Les vingt premières lettres
+1:20 ## crée une liste (ou un vecteur) des nombres de 1 à 20
+1980:2021     ## Créez un vecteur d'années de 1980 à 2021
+seq(1980,2021,4)              ##  Créez un vecteur des années bisextiles depuis  1980
+
+
+```
+
+
+
 
 
 

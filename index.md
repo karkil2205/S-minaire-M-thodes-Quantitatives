@@ -55,7 +55,7 @@
 3. "… an impressive book … this is a good reference book with comprehensive coverage of the details of statistical analysis and application that the social researcher may need in their work. I would recommend it as a useful addition to the bookshelf." ―Significance, December 2008
 
 
-
+* Les données utilisées dans le livre sont disponibles sur ce lien [https://github.com/alanarnholt/Data](https://github.com/alanarnholt/Data).
 
 
 

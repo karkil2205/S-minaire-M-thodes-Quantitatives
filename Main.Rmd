@@ -94,7 +94,43 @@ seq(1980,2021,4)              ##  Créez un vecteur des années bisextiles depui
 ```
 
 
+```{r}
+z
+z[1] ## Garder le premier élément
+z[-1] ## Enlever le premier élément
+z[c(1,2)]      ## Garder les deux premiers éléments  
+z[-c(1,2)] ## Enlever les deux premiers éléments
+z[-(1:2)] ## Idem
+
+z[z>5] ## Garder les éléments supérieurs à 5
+
+```
 
 
+```{r}
+
+data<-c(rep(c("Nord","Oui"),0.3*30000),
+rep(c("Nord","Non"),0.1*30000),
+rep(c("Sud","Oui"),0.2*30000),
+rep(c("Sud","Non"),0.4*30000))
+
+data<-matrix(data,nrow=30000,ncol=2,byrow=TRUE)
+data<-as.data.frame(data)
+typeof(data)
+class(data)
+is.data.frame(data)
+class(x)
+typeof(x)
+names(data)<-c("Région","Réponse")
+head(data)
+te<-table(data) ## Tableau d'effectifs
+te          
+  ## Tableau de proportions
+prop.table(te) ## Calcule le tableau en proportions à partir du tableau en effectifs
+addmargins(prop.table(te)) ## Rajoute les marges, sommes en ligne et en colonne
+addmargins(prop.table(te,1),2) ## Calcule les prop. en ligne (en conditionnant par les lignes) et rajoute les marges qui ont un sens
+addmargins(prop.table(te,2),1) ## Calcule les prop. en colonne (conditionnelles) et rajoute les marges qui ont un sens
+
+```
 
 

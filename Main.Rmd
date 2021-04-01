@@ -134,3 +134,96 @@ addmargins(prop.table(te,2),1) ## Calcule les prop. en colonne (conditionnelles)
 ```
 
 
+```{r}
+Grades <- c("A", "D", "C", "D", "C", "C", "C", "C", "F", "B") # Crée la variable
+Grades # Affiche la variable
+table(Grades) # Crée une table de fréquence
+xtabs(~Grades) # Idem avec la fonction xtabs
+table(Grades)/length(Grades) # Crée la table en prop.
+prop.table(table(Grades)) # Idem
+prop.table(xtabs(~Grades)) # Idem
+```
+# Utiliser des données qui se trouvent dans un Package
+
+```{r}
+library(MASS) # Active le Package MASS
+# data(package="MASS") # Montre tous les fichiers de données du Package MASS
+head(quine) # Montre les 6 premières ligne de du fichier quine
+table(quine$Age)
+xtabs(~Age,data=quine) # Effectifs par Age
+names(quine) # Donne le nom des variables
+xtabs(~Age+Sex,data=quine) # On croise la variable Age et Sex
+addmargins(xtabs(~Age+Sex,data=quine))
+
+#table(quine$Age)  accessing Age using dollar prefixing
+```
+# Utiliser les pipes
+
+
+```{r}
+library(magrittr)
+library(MASS) # Charger une librairie pour les pipes
+xtabs(~Age+Sex,data=quine) %>% 
+addmargins()
+  
+xtabs(~Grades,data=quine)%>% 
+barplot()
+
+```
+
+# Des graphiques plus sophistiqués
+
+```{r}
+library(ggplot2) # On charge cette librairie de dataviz
+is.data.frame(quine)
+
+ggplot(data=quine, aes(x=Age))+ 
+geom_bar(aes(y = (..count..)/sum(..count..)))
+
+bp<-ggplot(data=quine, aes(x=Age))+ 
+geom_bar(aes(y = (..count..)),fill = "red")+ggtitle("Distribution des âges") +ylab("Effectif")+xlab("Classe d'âge")
+bp
+pie(xtabs(~Age,data=quine)) ## Faire le pie chart avec ggplot2
+
+
+```
+
+# Stem and leaf plot
+
+
+
+```{r}
+set.seed(123) # Initialiser le gen. aleatoire
+randomnorm<-rnorm(100,45,12) # Générer 100 nombre aléatoire selon une loi normale de moyenne 45 et d"écart-type 12
+hist(randomnorm,col="red") # Histogram simple
+stem(randomnorm)  # Stem and leaf plot
+min(randomnorm) # Valeur minimale
+max(randomnorm) # Valeur maximale
+df=data.frame(randomnorm)
+
+ggplot(data=df, aes(x=randomnorm))+geom_histogram(bins=6,fill="red")
+
+```
+
+
+
+# Statistiques de base
+
+
+
+```{r}
+
+mean(df$randomnorm) # Moyenne
+sd(df$randomnorm) # Ecart-type
+var(df$randomnorm) # Variance
+median(df$randomnorm) # médiane
+summary(df$randomnorm)
+summary(df)
+
+```
+# Charger des données sur un lien
+
+```{r}
+read.csv("https://raw.githubusercontent.com/karkil2205/Seminaire-Methodes-Quantitatives/main/Bodyfat.csv")
+```
+

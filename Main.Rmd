@@ -1,7 +1,11 @@
 ---
 title: "Intitation à RStudio"
-output: pdf_document
-toc: TRUE  
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  word_document: default
+toc: yes
 ---
 
 # Introduction
@@ -293,7 +297,7 @@ read.csv("https://raw.githubusercontent.com/karkil2205/Seminaire-Methodes-Quanti
 
 ```{r}
 library(Ecdat)
-data(package = "Ecdat")
+
 
 ```
 

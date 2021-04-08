@@ -284,10 +284,16 @@ read.csv("https://raw.githubusercontent.com/karkil2205/Seminaire-Methodes-Quanti
 
 # Exercice Yogurt
 
-* Les données sont disponibles dans le package Ecdat
+* Les données sont disponibles dans le package **Ecdat**
 
 * Les données sont traitées dans l'article [MISRA, Sanjog. Generalized reverse discrete choice models. Quantitative Marketing and Economics, 2005, vol. 3, no 2, p. 175-200](https://booksc.org/book/8122485/a8bab3).
 
 
 
+
+```{r}
+library(Ecdat)
+data(package = "Ecdat")
+
+```
 

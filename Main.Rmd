@@ -1,8 +1,6 @@
 ---
 title: "Intitation à RStudio"
-output:
-  html_notebook: default
-  word_document: default
+output: pdf_document
 ---
 
 # Introduction
@@ -175,6 +173,7 @@ barplot()
 
 ```{r}
 library(ggplot2) # On charge cette librairie de dataviz
+library(ggthemes) # Librairie de thèmes supplémentaires 
 is.data.frame(quine)
 
 ggplot(data=quine, aes(x=Age))+ 
@@ -183,10 +182,63 @@ geom_bar(aes(y = (..count..)/sum(..count..)))
 bp<-ggplot(data=quine, aes(x=Age))+ 
 geom_bar(aes(y = (..count..)),fill = "red")+ggtitle("Distribution des âges") +ylab("Effectif")+xlab("Classe d'âge")
 bp
-pie(xtabs(~Age,data=quine)) ## Faire le pie chart avec ggplot2
+ggplot(quine,aes(x= "", fill=Age)) +geom_bar(aes(y = (..count..)/sum(..count..)))+ggtitle(" ") +theme_economist()+
+  coord_polar("y", start=0)+labs(x=NULL, y=NULL)
 
 
 ```
+
+
+# Recode variables with dplyr
+
+```{r}
+library(dplyr)
+
+quine%>%mutate(Age=recode(Age,"F0"="CE1","F1"="CE2","F2"="CM1","F3"="CM2"))->df
+ggplot(df,aes(x= "", fill=Age)) +geom_bar(aes(y = (..count..)/sum(..count..)))+ggtitle("Répartition des âges par classe ") +theme_economist()+
+  coord_polar("y", start=0)+labs(x=NULL, y=NULL)
+
+
+
+```
+
+# Statistiques descriptives
+```{r,results='asis'}
+library(knitr)
+library(stargazer)
+library(qwraps2)
+stargazer(df,type="text")
+summary(df)%>%
+kable()  
+
+
+summary_table(df)
+
+library(dummies)
+
+dummy(quine$Eth)%>%
+data.frame()->dfEth
+
+dummy(quine$Sex)%>%
+data.frame()->dfSex
+
+dummy(quine$Age)%>%
+data.frame()->dfAge
+
+dummy(quine$Lrn)%>%
+data.frame()->dfLrn
+
+
+
+cbind(dfEth,dfSex,dfAge,dfLrn,quine$Days) ->df
+names(df)<-c("Eth A","Eth N","Female","Male","F0","F1","F2","F3","AL","SL","Days")
+knitr::opts_chunk$set(echo = FALSE)
+stargazer(df,type="latex")
+
+
+```
+
+
 
 # Stem and leaf plot
 
